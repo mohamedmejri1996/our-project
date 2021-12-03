@@ -1,1 +1,30 @@
-<p>chantier works!</p>
+
+
+<div  style="background: #ECECEC;padding:30px;">
+    <div nz-row [nzGutter]="8" >
+      
+      <div nz-col [nzSpan]="8" *ngFor="let chantier of chantierList">
+        <nz-card style="width:300px;" [nzCover]="coverTemplate" [nzActions]="[actionSetting]">
+            <nz-card-meta
+              nzTitle="{{chantier.title}}"
+              nzDescription="{{chantier.description|slice:0:100}}..."
+              [nzAvatar]="avatarTemplate"
+            ></nz-card-meta>
+          </nz-card>
+          <ng-template #avatarTemplate>
+            <nz-avatar nzSrc="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png"></nz-avatar>
+          </ng-template>
+          <ng-template #coverTemplate>
+            <img src="{{chantier.image}}" />
+          </ng-template>
+          <ng-template #actionSetting >
+            <i nz-icon nzType="eye" routerLink="/chantier/details/{{chantier.id}}"></i>
+          </ng-template>
+          
+    </div>
+
+</div>
+
+
+
+

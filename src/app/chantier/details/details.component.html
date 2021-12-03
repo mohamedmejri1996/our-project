@@ -1,0 +1,47 @@
+<nz-page-header class="site-page-header">
+    <!--breadcrumb-->
+ 
+
+    <!--avatar-->
+    <nz-avatar nz-page-header-avatar nzSrc="https://avatars0.githubusercontent.com/u/22736418?s=88&v=4"></nz-avatar>
+
+    <!--title-->
+    <nz-page-header-title>{{chantie.title}}</nz-page-header-title>
+
+    
+
+    <!--extra-->
+  
+
+    <!--content-->
+    <nz-page-header-content>
+      <div nz-row>
+        <div class="content-image">
+            <img src="{{chantie. image}}" alt="content" />
+          </div>
+        <div class="content">
+        
+          <p nz-paragraph>
+            {{chantie.description}}
+          </p>
+         
+        </div>
+      </div>
+      <div nz-row>
+      <nz-page-header-title>Date de lancement :</nz-page-header-title>
+      <p>{{chantie.datelancement}}</p>
+    </div>
+    <div nz-row>
+        <nz-page-header-title>Date de fin :</nz-page-header-title>
+        <p>{{chantie.datedefin}}</p>
+      </div>
+      <div nz-row>
+        <nz-page-header-title>Adresse :</nz-page-header-title>
+        <p>{{chantie.adresse}}</p>
+        
+      </div>
+      <nz-page-header-title> Goals:</nz-page-header-title>
+      <p *ngFor="let g of chantie.goals">-{{g}}</p>
+    </nz-page-header-content>
+  </nz-page-header>
+  
