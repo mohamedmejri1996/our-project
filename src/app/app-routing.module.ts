@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 
+
 const routes: Routes = [{ path: 'task', loadChildren: () => import('./tache/tache.module').then(m => m.TacheModule) }];
 
 
@@ -13,7 +14,8 @@ const routes2: Routes = [{ path: 'chantier', loadChildren: () => import('./chant
 
 @NgModule({
   imports: [RouterModule.forRoot(routes),RouterModule.forRoot(routes1),RouterModule.forRoot(routes2)],
-  exports: [RouterModule]
+  exports: [RouterModule],
+
 })
 export class AppRoutingModule { }
 
