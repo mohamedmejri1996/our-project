@@ -12,14 +12,17 @@ import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { DemoNgZorroAntdModule } from './ng-zorro-antd.module';
+import { LeafletModule } from '@asymmetrik/ngx-leaflet';
 import { NavbarComponent } from './navbar/navbar.component';
+
+
 registerLocaleData(en);
 
 @NgModule({
   declarations: [
     AppComponent,
     SidebarComponent,
-    NavbarComponent
+    NavbarComponent,
   ],
   imports: [
     BrowserModule,
@@ -27,7 +30,12 @@ registerLocaleData(en);
     FormsModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    DemoNgZorroAntdModule
+    DemoNgZorroAntdModule,
+ ayabranch
+    
+
+    LeafletModule
+ main
   ],
   providers: [{ provide: NZ_I18N, useValue: en_US }],
   bootstrap: [AppComponent]
