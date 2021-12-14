@@ -1,0 +1,36 @@
+<div style="background: #ECECEC;padding:30px;">
+  <div nz-row [nzGutter]="8">
+    <div nz-col [nzSpan]="8" >
+      <nz-card style="width:300px;" [nzCover]="coverTemplate" [nzActions]="[actionSetting, actionEdit]">
+          <nz-card-meta
+            [nzTitle]="emp.nom"
+            [nzAvatar]="avatarTemplate">
+          </nz-card-meta>
+        <p>{{emp.prenom}}</p>
+        <p>Email: {{emp.email}}</p>
+        <p>Tel:{{emp.telephone}}</p> 
+        <p>Travail:{{emp.travail}}</p>
+        </nz-card>
+        
+        <ng-template #avatarTemplate>
+          <nz-avatar [nzSrc]="emp.image"></nz-avatar>
+         
+       
+        </ng-template>
+        <ng-template #coverTemplate>
+          <!-- <img  [src]="employee.image" [alt]="employee.prenom"/> -->
+         
+        </ng-template>
+        <ng-template #actionSetting >
+          <button routerLink="employees/employee/{{emp.id}}" nz-button nzType="dashed" ><i nz-icon nzType="arrow-left"></i></button>
+         
+          
+        </ng-template>
+        <ng-template #actionEdit>
+          <button routerLink="/employee/{{emp.id}}" nz-button nzType="dashed" ><i nz-icon nzType="edit"></i></button>
+        
+        </ng-template>
+      
+      `
+    </div>
+   
