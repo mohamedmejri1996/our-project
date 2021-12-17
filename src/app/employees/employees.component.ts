@@ -11,6 +11,7 @@ import { employees } from './employee-list';
   
 export class EmployeesComponent implements OnInit {
   public employeesList = employees;
+  
 
   constructor() { }
 
