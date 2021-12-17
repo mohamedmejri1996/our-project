@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import chantier from '../chantier';
+import {ChantierService} from 'src/app/services/chantier.service';
 
 @Component({
   selector: 'app-details',
@@ -8,18 +8,16 @@ import chantier from '../chantier';
   styleUrls: ['./details.component.css']
 })
 export class DetailsComponent implements OnInit {
-  chantierList =chantier ;
+
   chantie : any;
    idch=this.route.snapshot.params.chantierid;
-  constructor(private route: ActivatedRoute) { }
+  constructor(private route: ActivatedRoute,private chantierService:ChantierService ) { }
 
   ngOnInit(): void {
-    for (var ch of this.chantierList) {
+    this.chantierService.get( this.idch).subscribe(
+      res => this.chantie = res
+    );
 
-      if(ch.id==this.idch){
-        this.chantie =ch ;
-      }
-    }
   }
 
 }

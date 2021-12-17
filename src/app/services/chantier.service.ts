@@ -4,7 +4,7 @@ import { HttpClient } from "@angular/common/http";
   providedIn: 'root'
 })
 export class ChantierService {
-  private apiUrl = 'http://localhost:3000/api/chantier';
+  private apiUrl = 'http://localhost:3000/chantier';
   constructor(private http: HttpClient) { }
 
   all() {
