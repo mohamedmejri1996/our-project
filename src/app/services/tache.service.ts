@@ -1,14 +1,12 @@
-import { Injectable } from '@angular/core';
 import { HttpClient } from "@angular/common/http";
-
+import { Injectable } from '@angular/core';
 
 @Injectable({
   providedIn: 'root'
 })
 export class TacheService {
 
-  // private apiUrl = 'http://localhost:4200/task';
-  private apiUrl = 'https://my-json-server.typicode.com/http://localhost:4200/task';
+  private apiUrl = 'http://localhost:3000/task';
 
   constructor(private http: HttpClient) { }
 

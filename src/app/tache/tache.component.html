@@ -1,25 +1,27 @@
-            <div  style="background: #ECECEC;padding:30px;">
-              <div nz-row [nzGutter]="8" >
-                
-                <div nz-col [nzSpan]="8" *ngFor="let tache of tacheList">
-                  <nz-card style="width:300px;" [nzCover]="coverTemplate" [nzActions]="[actionSetting]">
-                      <nz-card-meta
-                        nzTitle="{{tache.title}}"
-                        nzDescription="{{tache.description|slice:0:100}}..."
-                        [nzAvatar]="avatarTemplate"
-                      ></nz-card-meta>
-                    </nz-card>
-                    <ng-template #avatarTemplate>
-                      <nz-avatar nzSrc="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png"></nz-avatar>
-                    </ng-template>
-                    <ng-template #coverTemplate>
-                      <img src="{{tache.image}}" />
-                    </ng-template>
-                    <ng-template #actionSetting >
-                      <i nz-icon nzType="eye" routerLink="/task/details/{{tache.id}}"></i>
-                    </ng-template>
-                    
-              </div>
-          
-          </div>
-          
+
+
+
+<div  style="background: #ECECEC;padding:30px;">
+  <div nz-row [nzGutter]="8" >
+    
+    <div nz-col [nzSpan]="8" *ngFor="let tache of tacheList">
+      <nz-card style="width:300px;" [nzCover]="coverTemplate" [nzActions]="[actionSetting]">
+          <nz-card-meta
+            nzTitle="{{tache.title}}"
+            nzDescription="{{tache.description|slice:0:100}}..."
+            [nzAvatar]="avatarTemplate"
+          ></nz-card-meta>
+        </nz-card>
+        <ng-template #avatarTemplate>
+          <nz-avatar nzSrc="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png"></nz-avatar>
+        </ng-template>
+        <ng-template #coverTemplate>
+          <img src="{{tache.image}}" />
+        </ng-template>
+        <ng-template #actionSetting >
+          <i nz-icon nzType="eye" routerLink="/task/details/{{tache.id}}"></i>
+        </ng-template>
+        
+  </div>
+
+</div>
