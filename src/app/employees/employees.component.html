@@ -9,11 +9,11 @@
             <p>{{employee.prenom}}</p>
           </nz-card>
           <ng-template #avatarTemplate>
-            <nz-avatar [nzSrc]="employee.image"></nz-avatar>
+            <nz-avatar nzSrc={{employee.image}}></nz-avatar>
           </ng-template>
           <ng-template #coverTemplate>
             <!-- <img  [src]="employee.image" [alt]="employee.prenom"/> -->
-           
+         
           </ng-template>
           <ng-template #actionSetting >
             <i  routerLink="/employees/detail/{{employee.id}}" nz-icon nzType="eye" ></i>

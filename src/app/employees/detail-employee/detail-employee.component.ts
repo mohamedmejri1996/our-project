@@ -10,13 +10,13 @@ import { employees } from '../employee-list';
 })
 export class DetailEmployeeComponent implements OnInit {
   
-  employee : any;
+  emp: any;
   idemply=this.route.snapshot.params.idemployee;
   constructor(private route : ActivatedRoute,private employeeService:EmployeeService) {}
 
   ngOnInit(): void {
     this.employeeService.get( this.idemply).subscribe(
-      res => this.employee = res
+      res => this.emp = res
     );
  
   }

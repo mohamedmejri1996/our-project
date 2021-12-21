@@ -30,8 +30,7 @@ registerLocaleData(en);
     HttpClientModule,
     BrowserAnimationsModule,
     DemoNgZorroAntdModule,
-    LeafletModule,
-
+    LeafletModule
 
   ],
   providers: [{ provide: NZ_I18N, useValue: en_US }],
