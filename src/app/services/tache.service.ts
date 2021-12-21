@@ -1,19 +1,12 @@
-import { HttpClient } from "@angular/common/http";
 import { Injectable } from '@angular/core';
-
+import { HttpClient } from "@angular/common/http";
 @Injectable({
   providedIn: 'root'
 })
 export class TacheService {
-
-  private apiUrl = 'http://localhost:3000/task';
-
+  private apiUrl = 'http://localhost:3000/tache';
   constructor(private http: HttpClient) { }
 
-  /**
-   * Get all taches
-   * @returns Observable<Tache[]>
-   */
   all() {
     return this.http.get(this.apiUrl);
   }
