@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { tache } from '../taches';
+import { TacheService } from 'src/app/services/tache.service';
 
 @Component({
   selector: 'app-details',
@@ -8,18 +8,15 @@ import { tache } from '../taches';
   styleUrls: ['./details.component.css']
 })
 export class DetailsComponent implements OnInit {
-  tacheList = tache ;
+
   tache : any;
    idth=this.route.snapshot.params.tacheid;
-  constructor(private route: ActivatedRoute) { }
+  constructor(private route: ActivatedRoute, private tacheservice: TacheService) { }
 
-  ngOnInit(): void {
-    for (var th of this.tacheList) {
-
-      if(th.id==this.idth){
-        this.tache =th ;
-      }
+  ngOnInit(): void { 
+    this.tacheservice.get(this.idth).subscribe(
+      res => this.tache = res
+    );
     }
   }
 
-}

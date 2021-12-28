@@ -14,18 +14,14 @@
         <span routerLink="/employees">Employees</span>
       <li nz-menu-item nzMatchRouter>
         <i nz-icon nzType="schedule"></i>
-        <span routerLink="/task">Taches</span>
-      
+
+        <span routerLink="/task">Tasks</span> 
+
       </li>
       <li nz-menu-item nzMatchRouter>
         <i nz-icon nzType="schedule"></i>
         <span routerLink="/chantier">Chantier</span>
 
-      </li>
-      <li nz-menu-item nzMatchRouter>
-        <i nz-icon nzType="area-chart"></i>
-        <span routerLink="/task">Charts</span>
-      </li>
       <li nz-menu-item nzMatchRouter> 
         <i nz-icon nzType="area-chart"></i>
         <a routerLink="/test">Test</a>
@@ -37,11 +33,13 @@
     <nz-content>
 
       <div class="inner-content"> 
+
    <!--    <div id="map"
       leaflet
       [leafletOptions]="options"
       >
       </div> -->
+
       <router-outlet></router-outlet>
       </div>
 
