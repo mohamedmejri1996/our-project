@@ -15,7 +15,6 @@ import { DemoNgZorroAntdModule } from './ng-zorro-antd.module';
 import { LeafletModule } from '@asymmetrik/ngx-leaflet';
 import { NavbarComponent } from './navbar/navbar.component';
 
-
 registerLocaleData(en);
 
 @NgModule({
@@ -32,6 +31,7 @@ registerLocaleData(en);
     BrowserAnimationsModule,
     DemoNgZorroAntdModule,
     LeafletModule
+
   ],
   providers: [{ provide: NZ_I18N, useValue: en_US }],
   bootstrap: [AppComponent]

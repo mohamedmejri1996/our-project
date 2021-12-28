@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { EmployeeService } from 'src/app/services/employee.service';
 import { employees } from '../employee-list';
 
 @Component({
@@ -8,19 +9,19 @@ import { employees } from '../employee-list';
   styleUrls: ['./detail-employee.component.css']
 })
 export class DetailEmployeeComponent implements OnInit {
-  public employeesList = employees;
-  idemply = this.route.snapshot.params.idemployee ;
-  emp :any;
-  constructor(private route : ActivatedRoute) {}
+  
+  emp: any;
+  idemply=this.route.snapshot.params.idemployee;
+  constructor(private route : ActivatedRoute,private employeeService:EmployeeService) {}
 
   ngOnInit(): void {
-    for (var e of this.employeesList) {
-
-      if(e.id==this.idemply){
-        this.emp =e ;
-      }
-    }
-
+    this.employeeService.get( this.idemply).subscribe(
+      res => this.emp = res
+    );
+ 
   }
 
-}
+  }
+ 
+
+

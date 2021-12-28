@@ -1,4 +1,5 @@
 {
+
     "tache" : [
       
          {
@@ -70,6 +71,78 @@
            ],
 
 
+
+    "employee" : [
+      {
+        "id": "8f4aa769-7841-424c-a817-a6b50ae75c66",
+        "nom": "Mohamed",
+        "prenom": "Jaddi",
+        "email": "mohamed@gmail.com",
+        "telephone":"25150123",
+        "travail":"chef projet",
+        "image":
+        "https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png"
+       
+      },
+      {
+          "id": "8f4aa769-7841-424c-a817-a6b50ae75c66",
+          "nom": "Ahmed",
+          "prenom": "Jaddi",
+          "email": "mohamed@gmail.com",
+          "telephone":"25150123",
+          "travail":"chef projet",
+          
+          "image":
+            "https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png"
+         
+        },
+        {
+          "id": "8f4aa769-7841-424c-a817-a6b50ae75c66",
+          "nom": "Marwan",
+          "prenom": "BenSalime",
+          "email": "mohamed@gmail.com",
+          "telephone":"25150123",
+          "travail":"chef projet",
+          "image":
+          "https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png"
+         
+        },
+        {
+          "id": "8f4aa769-7841-424c-a817-a6b50ae75c66",
+          "nom": "Samie",
+          "prenom": "koukie",
+          "email": "mohamed@gmail.com",
+          "telephone":"25150123",
+          "travail":"chef projet",
+          "image":
+          "https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png"
+         
+        },
+        {
+          "id": "8f4aa769-7841-424c-a817-a6b50ae75c69",
+          "nom": "Mohamed",
+          "prenom": "Arife",
+          "email": "mohamed@gmail.com",
+          "telephone":"25150123",
+          "travail":"chef projet",
+          "image":
+          "https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png"
+         
+        },
+     
+        {
+          "id": "8f4aa769-7841-424c-a817-a6b50ae75c68",
+          "nom": "Khlifa",
+          "prenom": "Jaddi",
+          "email": "mohamed@gmail.com",
+          "telephone":"25150123",
+          "travail":"chef projet",
+          "image":
+          "https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png"
+         
+        }
+    ],
+    
     "chantier" : [
         
             {
