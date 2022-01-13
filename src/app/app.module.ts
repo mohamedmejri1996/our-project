@@ -14,6 +14,9 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { DemoNgZorroAntdModule } from './ng-zorro-antd.module';
 import { LeafletModule } from '@asymmetrik/ngx-leaflet';
 import { NavbarComponent } from './navbar/navbar.component';
+import { LoginComponent } from './login/login.component';
+import { TacheService } from './services/tache.service';
+import { TacheComponent } from './tache/tache.component';
 
 registerLocaleData(en);
 
@@ -22,6 +25,9 @@ registerLocaleData(en);
     AppComponent,
     SidebarComponent,
     NavbarComponent,
+   
+
+    
   ],
   imports: [
     BrowserModule,
@@ -33,6 +39,7 @@ registerLocaleData(en);
     LeafletModule
 
   ],
+
   providers: [{ provide: NZ_I18N, useValue: en_US }],
   bootstrap: [AppComponent]
 })
